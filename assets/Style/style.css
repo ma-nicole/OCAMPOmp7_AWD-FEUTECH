@@ -1,0 +1,35 @@
+body {
+    padding-top: 20px;
+    background: url("https://4kwallpapers.com/images/wallpapers/hogwarts-harry-5120x2880-13694.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: left;
+    overflow: auto;
+}
+.form-container h2{
+    text-align: center;
+    width: 80%;
+
+}
+.form-container {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: auto;
+    width: 80%;
+    background-color: rgb(59, 40, 8);
+    opacity: 80%;
+    color: rgb(234, 222, 131);
+    font-family: 'MedievalSharp', cursive;
+}
+.form-container img{
+   width: 10%;
+   height: 20%;
+}
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

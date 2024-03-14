@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Success</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap">
+    <style>
+        body {
+            padding-top: 20px;
+            background: url("https://4kwallpapers.com/images/wallpapers/hogwarts-harry-5120x2880-13694.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-family: 'MedievalSharp', cursive;
+        }
+        body img{
+            width: 15%;
+            height: 20%;
+            margin: 20px;
+        }
+        .container-fluid{
+            background-color: rgba(18, 36, 63, 0.491);
+            padding: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Hogwarts-Crest.png" alt="Hogwarts Crest">
+<div class="container-fluid">
+    <h2>Registration Successful!</h2>
+    <div id="result">
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function() {
+    const formData = JSON.parse(localStorage.getItem('formData'));
+    $('#result').html(`<p>First Name: ${formData.firstName}</p><p>Last Name: ${formData.lastName}</p><p>Email: ${formData.email}</p><p>Hogwarts House: ${formData.hogwartshouse}</p>`);
+});
+</script>
+</body>
+</html>
