@@ -41,6 +41,7 @@
     <h2>Registration Successful!</h2>
     <div id="result">
     </div>
+    <button onclick="goBack()" class="btn btn-primary btn-back">Back to Registration Form</button>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -49,6 +50,9 @@ $(document).ready(function() {
     const formData = JSON.parse(localStorage.getItem('formData'));
     $('#result').html(`<p>First Name: ${formData.firstName}</p><p>Last Name: ${formData.lastName}</p><p>Email: ${formData.email}</p><p>Hogwarts House: ${formData.hogwartshouse}</p>`);
 });
+function goBack() {
+    window.history.back();
+}
 </script>
 </body>
 </html>
