@@ -22,3 +22,22 @@ $(document).ready(function() {
         window.location.href = 'assets/display/success.html'; 
     });
 });
+
+
+function showlogin() {
+    var login = document.querySelector('.login');
+    var hide = document.querySelector('.container');
+
+    login.style.visibility = 'visible';
+    hide.style.visibility = 'hidden';
+
+  }
+
+  function showsignin() {
+    var login = document.querySelector('.login');
+    var hide = document.querySelector('.container');
+
+    login.style.visibility = 'hidden';
+    hide.style.visibility = 'visible';
+
+  }
